@@ -1,0 +1,68 @@
+/*!
+Theme Name: Тут название темы
+Theme URI: http://prosite46.ru/
+Author: Автор
+Author URI: 
+Description: 
+Version: 1.0.0
+Tested up to: 
+Requires PHP: 
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: prosite46.ru
+
+*/
+
+/* ===== Обнуление ===== */
+@import "null";
+
+/* ===== Переменные ===== */
+@import "vars";
+
+/* ===== Миксины ===== */
+
+/* ===== Style.scss ===== */
+body {
+    max-width: 1920px;
+    min-width: 320px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    font-family: $fontname;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: $white;
+
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+.conteiner {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+/* ===== Импорт scss модулей ===== */
+@import "header";
+
+
+/* ===== Медиазапросы ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

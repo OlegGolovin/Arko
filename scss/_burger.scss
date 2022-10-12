@@ -1,0 +1,32 @@
+/* ===== Burger.scss ===== */
+
+.burger-menu {
+    display: none;
+}
+
+/* ===== Медиазапросы ===== */
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+        flex: 0 0 5%;
+        align-items: center;
+        justify-content: center;
+        padding-right: 7px;
+        z-index: 100;
+        #burger-icon {
+            cursor: pointer;
+            font-size: 30px;
+            transition: all 0.4s linear;
+        }
+        /* ===== Класс при клике на бургер ===== */
+        .fa-times {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+}
