@@ -137,5 +137,97 @@ body {
 
 /* ===== Импорт scss модулей ===== */
 /* ===== Header.scss ===== */
+.header {
+  height: 55px;
+  width: 100%;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-top-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top-left__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top-left__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+.header-top-left__list .header-top-left__item {
+  margin-right: 38px;
+}
+.header-top-left__list .header-top-left__item:last-child {
+  margin-right: 10px;
+}
+
 /* ===== Медиазапросы ===== */
+/* ===== Drop-down inputs.scss ===== */
+/* ===== Drop-down input ===== */
+.drop-down__wrapper {
+  width: 105px;
+  position: relative;
+  padding: 0 0.1rem;
+}
+.drop-down__wrapper img {
+  position: absolute;
+  width: 16px;
+  height: 21px;
+  left: 0;
+  pointer-events: none;
+}
+
+.drop-down {
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  border: none;
+  outline: none;
+  font-family: "PT Sans, sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1D1818;
+  padding-right: 0.95rem;
+  cursor: pointer;
+  padding-left: 20px;
+  /* ===== Скрываем стрелку в IE ===== */
+}
+.drop-down option {
+  margin-left: 10px;
+}
+.drop-down ::-ms-expand {
+  display: none;
+}
+
+/* ===== Media ===== */
 /* ===== Медиазапросы ===== */

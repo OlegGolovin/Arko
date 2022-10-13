@@ -1,13 +1,44 @@
 /* ===== Header.scss ===== */
 .header {
+    height: 55px;
+    width: 100%;
 }
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-left__city {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-top-left__list {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    .header-top-left__item {
+        margin-right: 38px;
+
+        &:last-child {
+            margin-right: 10px;
+        }
+    }
+}
+
 
 /* ===== Медиазапросы ===== */
-@media (max-width: 992px) {
-}
+@media (max-width: 992px) {}
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 576px) {
-}
+@media (max-width: 576px) {}

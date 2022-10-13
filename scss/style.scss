@@ -58,7 +58,7 @@ h6 {}
 
 /* ===== Импорт scss модулей ===== */
 @import "header";
-
+@import "./components/dropdown";
 
 /* ===== Медиазапросы ===== */
 @media (max-width: 992px) {}
