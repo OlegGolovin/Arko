@@ -190,44 +190,165 @@ body {
 
 /* ===== Медиазапросы ===== */
 /* ===== Drop-down inputs.scss ===== */
-/* ===== Drop-down input ===== */
-.drop-down__wrapper {
-  width: 105px;
-  position: relative;
-  padding: 0 0.1rem;
-}
-.drop-down__wrapper img {
-  position: absolute;
-  width: 16px;
-  height: 21px;
-  left: 0;
-  pointer-events: none;
+.wrapper {
+  width: 200px;
 }
 
-.drop-down {
-  background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: block;
-  border: none;
-  outline: none;
+.wrapper.active .select-btn i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.select-btn,
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.select-btn {
+  height: 100%;
+  padding: 10px 20px;
   font-family: "PT Sans, sans-serif";
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: #1D1818;
-  padding-right: 0.95rem;
-  cursor: pointer;
-  padding-left: 20px;
-  /* ===== Скрываем стрелку в IE ===== */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.drop-down option {
-  margin-left: 10px;
-}
-.drop-down ::-ms-expand {
-  display: none;
+.select-btn i {
+  font-size: 10px;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
+.content {
+  width: 250px;
+  display: none;
+  padding: 10px;
+  margin-top: 5px;
+  background: #fff;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active .content {
+  display: block;
+}
+
+.content .search {
+  position: relative;
+}
+
+.search i {
+  top: 50%;
+  left: 15px;
+  color: #999;
+  font-size: 20px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+}
+
+.search input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 0 20px 0 43px;
+  border: 1px solid #B3B3B3;
+}
+
+.search input:focus {
+  padding-left: 42px;
+  border: 2px solid #4285f4;
+}
+
+.search input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+.search input::-moz-placeholder {
+  color: #bfbfbf;
+}
+
+.search input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.search input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.search input::placeholder {
+  color: #bfbfbf;
+}
+
+.content .options {
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 7px;
+}
+
+.options::-webkit-scrollbar {
+  width: 7px;
+}
+
+.options::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.options li {
+  height: 50px;
+  padding: 0 13px;
+  font-size: 18px;
+}
+
+.options li:hover,
+li.selected {
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+/* ===== Drop-down input ===== */
+/* .drop-down__wrapper {
+    width: 105px;
+    position: relative;
+
+    padding: 0 0.1rem;
+
+    img {
+        position: absolute;
+        width: 16px;
+        height: 21px;
+        left: 0;
+        // top: 50%;
+        // right: 0.3rem;
+        pointer-events: none;
+    }
+} */
 /* ===== Media ===== */
 /* ===== Медиазапросы ===== */

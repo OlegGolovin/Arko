@@ -28,47 +28,51 @@
                 <div class="header-top-left">
                     <div class="header-top-left__city">
 
-                        <div class="drop-down__wrapper">
-                            <img src="./img/svg/adress.svg" alt="">
-                            <select class="drop-down" name="city" id="">
-                                <option value="c1">Ростов</option>
-                                <option value="c1">Москва</option>
-                                <option value="c1">Санкт Петербург</option>
-                                <option value="c1">Нижний Новгород</option>
-                                <option value="c1">Пенза</option>
-                            </select>
+                        <div class="wrapper">
+                            <div class="select-btn">
+                                <span>Местоположение</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="content">
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input spellcheck="false" type="text" placeholder="Поиск">
+                                </div>
+                                <ul class="options"></ul>
+                            </div>
                         </div>
+
+
+
+                        <ul class="header-top-left__list">
+                            <li class="header-top-left__item">
+                                <a href="#">Акции</a>
+                            </li>
+                            <li class="header-top-left__item">
+                                <a href="#">Сборка</a>
+                            </li>
+                            <li class="header-top-left__item">
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li class="header-top-left__item">
+                                <a href="#">Доставка</a>
+                            </li>
+                        </ul>
+
                     </div>
+                    <div class="header-top-right">
 
-                    <ul class="header-top-left__list">
-                        <li class="header-top-left__item">
-                            <a href="#">Акции</a>
-                        </li>
-                        <li class="header-top-left__item">
-                            <a href="#">Сборка</a>
-                        </li>
-                        <li class="header-top-left__item">
-                            <a href="#">Оплата</a>
-                        </li>
-                        <li class="header-top-left__item">
-                            <a href="#">Доставка</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="header-top-right">
-
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="header-middle">
+            <div class="header-middle">
 
-        </div>
-        <div class="header-bottom">
+            </div>
+            <div class="header-bottom">
 
-        </div>
+            </div>
     </header>
 
     <!-- ===== //Шапка ===== -->
@@ -79,6 +83,7 @@
 
     <!-- Подключаем скрипты -->
     <script src="js/script.js"></script>
+    <script src="js/dropdown.js"></script>
     <!--<script src="js/jquery-3.6.0.min.js"></script>-->
     <!-- <script src="js/swiper-bundle.min.js"></script>-->
     <!-- <script src="js/burger.js"></script>-->
