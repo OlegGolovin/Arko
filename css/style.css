@@ -191,7 +191,17 @@ body {
 /* ===== Медиазапросы ===== */
 /* ===== Drop-down inputs.scss ===== */
 .wrapper {
-  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 120px;
+  position: relative;
 }
 
 .wrapper.active .select-btn i {
@@ -208,6 +218,14 @@ li {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+.select-btn span,
+li span {
+  padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
 }
 
 .select-btn {
@@ -232,6 +250,9 @@ li {
 }
 
 .content {
+  position: absolute;
+  left: 0;
+  top: 50px;
   width: 250px;
   display: none;
   padding: 10px;
@@ -241,16 +262,10 @@ li {
   -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-
-.wrapper.active .content {
-  display: block;
-}
-
 .content .search {
   position: relative;
 }
-
-.search i {
+.content .search i {
   top: 50%;
   left: 15px;
   color: #999;
@@ -260,8 +275,7 @@ li {
           transform: translateY(-50%);
   position: absolute;
 }
-
-.search input {
+.content .search input {
   height: 50px;
   width: 100%;
   outline: none;
@@ -270,37 +284,34 @@ li {
   padding: 0 20px 0 43px;
   border: 1px solid #B3B3B3;
 }
-
-.search input:focus {
+.content .search input:focus {
   padding-left: 42px;
   border: 2px solid #4285f4;
 }
-
-.search input::-webkit-input-placeholder {
-  color: #bfbfbf;
+.content .search input::-webkit-input-placeholder {
+  color: #9e9999;
 }
-
-.search input::-moz-placeholder {
-  color: #bfbfbf;
+.content .search input::-moz-placeholder {
+  color: #9e9999;
 }
-
-.search input:-ms-input-placeholder {
-  color: #bfbfbf;
+.content .search input:-ms-input-placeholder {
+  color: #9e9999;
 }
-
-.search input::-ms-input-placeholder {
-  color: #bfbfbf;
+.content .search input::-ms-input-placeholder {
+  color: #9e9999;
 }
-
-.search input::placeholder {
-  color: #bfbfbf;
+.content .search input::placeholder {
+  color: #9e9999;
 }
-
 .content .options {
   margin-top: 10px;
   max-height: 250px;
   overflow-y: auto;
   padding-right: 7px;
+}
+
+.wrapper.active .content {
+  display: block;
 }
 
 .options::-webkit-scrollbar {
@@ -323,7 +334,7 @@ li {
 
 .options li {
   height: 50px;
-  padding: 0 13px;
+  padding: 0 10px;
   font-size: 18px;
 }
 

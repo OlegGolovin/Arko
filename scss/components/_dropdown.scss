@@ -1,7 +1,11 @@
 /* ===== Drop-down inputs.scss ===== */
 
 .wrapper {
-    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120px;
+    position: relative;
     // margin: 85px auto 0;
 }
 
@@ -14,6 +18,15 @@ li {
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    span {
+        padding-right: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: nowrap;
+        ;
+    }
 }
 
 .select-btn {
@@ -35,10 +48,10 @@ li {
 
 }
 
-
-
-
 .content {
+    position: absolute;
+    left: 0;
+    top: 50px;
     width: 250px;
     display: none;
     padding: 10px;
@@ -46,50 +59,50 @@ li {
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    .search {
+        position: relative;
+
+        i {
+            top: 50%;
+            left: 15px;
+            color: #999;
+            font-size: 20px;
+            pointer-events: none;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
+        input {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 0 20px 0 43px;
+            border: 1px solid #B3B3B3;
+
+            &:focus {
+                padding-left: 42px;
+                border: 2px solid #4285f4;
+            }
+
+            &::placeholder {
+                color: #9e9999;
+            }
+        }
+    }
+
+    .options {
+        margin-top: 10px;
+        max-height: 250px;
+        overflow-y: auto;
+        padding-right: 7px;
+    }
 }
 
 .wrapper.active .content {
     display: block;
-}
-
-.content .search {
-    position: relative;
-}
-
-.search i {
-    top: 50%;
-    left: 15px;
-    color: #999;
-    font-size: 20px;
-    pointer-events: none;
-    transform: translateY(-50%);
-    position: absolute;
-}
-
-.search input {
-    height: 50px;
-    width: 100%;
-    outline: none;
-    font-size: 17px;
-    border-radius: 5px;
-    padding: 0 20px 0 43px;
-    border: 1px solid #B3B3B3;
-}
-
-.search input:focus {
-    padding-left: 42px;
-    border: 2px solid #4285f4;
-}
-
-.search input::placeholder {
-    color: #bfbfbf;
-}
-
-.content .options {
-    margin-top: 10px;
-    max-height: 250px;
-    overflow-y: auto;
-    padding-right: 7px;
 }
 
 .options::-webkit-scrollbar {
@@ -112,7 +125,7 @@ li {
 
 .options li {
     height: 50px;
-    padding: 0 13px;
+    padding: 0 10px;
     font-size: 18px;
 }
 
