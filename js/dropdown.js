@@ -3,7 +3,7 @@ const wrapper = document.querySelector(".wrapper"),
     selectBtn = wrapper.querySelector(".select-btn"),
     searchInp = wrapper.querySelector("input"),
     options = wrapper.querySelector(".options");
-let countries = ["Москва", "Санкт Петербург", "Нижний Новгород", "Тула", "Орел", "Воронеж", "Варкута",
+let countries = ["Москва", "Санкт Петербург", "Нижний Новгород", "Очень длинный текст какойто", "Тула", "Орел", "Воронеж", "Варкута",
     "Липецк", "Владимир", "Екатеринбург", "Вологда", "Волгоград", "Иваново", "Брянск", "Бийск"];
 function addCountry(selectedCountry) {
     options.innerHTML = "";

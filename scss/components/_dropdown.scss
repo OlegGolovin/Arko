@@ -18,6 +18,10 @@ li {
     display: flex;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
 
     span {
         padding-right: 5px;
@@ -31,7 +35,8 @@ li {
 
 .select-btn {
     height: 100%;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px 10px;
     font-family: $fontname;
     font-style: normal;
     font-weight: 700;

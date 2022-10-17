@@ -11,6 +11,7 @@
 }
 
 .header-top-left {
+    flex: 1 1 auto;
     display: flex;
     align-items: center;
 }
@@ -35,6 +36,9 @@
     }
 }
 
+.header-top-middle {
+    flex: 1 1 auto;
+}
 
 /* ===== Медиазапросы ===== */
 @media (max-width: 992px) {}
