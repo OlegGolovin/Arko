@@ -128,6 +128,15 @@ body {
   background-color: white;
 }
 
+a {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1D1818;
+}
+
 .conteiner {
   max-width: 1540px;
   width: 100%;
@@ -146,18 +155,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items: center; */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 20px;
 }
 
 .header-top-left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,15 +196,79 @@ body {
   margin-right: 10px;
 }
 
-.header-top-middle {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.header-top__line {
+  height: 1px;
+  width: 100%;
+  border: 1px solid #E0E0E0;
 }
 
-/* ===== Медиазапросы ===== */
-/* ===== Drop-down inputs.scss ===== */
-.wrapper {
+.header-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-top-right a {
+  margin-right: 56px;
+}
+.header-top-right a:last-child {
+  margin-right: 0;
+}
+
+.header-middle {
+  width: 100%;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-middle-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-middle-adress {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.phone-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.phone-block-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,11 +278,125 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 120px;
-  position: relative;
+}
+.phone-block-wrap a {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #1D1818;
+}
+.phone-block-wrap img {
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
 }
 
-.wrapper.active .select-btn i {
+.phone-block-btn {
+  width: 160px;
+  height: 35px;
+  border: 1px solid #E13B3F;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-left: 28px;
+}
+.phone-block-btn a {
+  padding: 6px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #E13B3F;
+  white-space: nowrap;
+}
+
+.icons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icons-block-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+  row-gap: 10px;
+}
+
+.icons-block-elected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.elected-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.elected-group span {
+  width: 36px;
+  height: 19px;
+  background: #E13B3F;
+  border-radius: 7px;
+}
+
+/* ===== Медиазапросы ===== */
+/* ===== Drop-down inputs.scss ===== */
+/* dropdown вариант1 */
+.dropdown-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 125px;
+  position: relative;
+}
+.dropdown-wrapper img {
+  margin-top: -10px;
+}
+
+.dropdown-wrapper.active .select-btn i {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -239,12 +422,18 @@ li span {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   white-space: nowrap;
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1D1818;
 }
 
 .select-btn {
   height: 100%;
   width: 100%;
-  padding: 10px 10px;
+  padding: 7px 7px;
   font-family: "PT Sans, sans-serif";
   font-style: normal;
   font-weight: 700;
@@ -324,7 +513,7 @@ li span {
   padding-right: 7px;
 }
 
-.wrapper.active .content {
+.dropdown-wrapper.active .content {
   display: block;
 }
 
@@ -358,22 +547,81 @@ li.selected {
   background: #f2f2f2;
 }
 
-/* ===== Drop-down input ===== */
-/* .drop-down__wrapper {
-    width: 105px;
-    position: relative;
-
-    padding: 0 0.1rem;
-
-    img {
-        position: absolute;
-        width: 16px;
-        height: 21px;
-        left: 0;
-        // top: 50%;
-        // right: 0.3rem;
-        pointer-events: none;
-    }
-} */
+/* //dropdown вариант1 */
 /* ===== Media ===== */
+/* ===== Search.scss ===== */
+.search-string {
+  position: relative;
+  width: 296px;
+}
+.search-string .search-string-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #A8D1E7;
+  border-radius: 25px;
+  height: 45px;
+}
+.search-string img {
+  top: 50%;
+  right: 15px;
+  font-size: 20px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+}
+.search-string input {
+  width: 87%;
+  outline: none;
+  font-size: 17px;
+  padding: 0 15px 0 25px;
+  margin-left: 3px;
+}
+.search-string input::-webkit-input-placeholder {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #626262;
+}
+.search-string input::-moz-placeholder {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #626262;
+}
+.search-string input:-ms-input-placeholder {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #626262;
+}
+.search-string input::-ms-input-placeholder {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #626262;
+}
+.search-string input::placeholder {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #626262;
+}
+
+/* ===== Медиазапросы ===== */
 /* ===== Медиазапросы ===== */

@@ -49,6 +49,15 @@ h5 {}
 
 h6 {}
 
+a {
+    font-family: $fontname;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $colortextblack;
+}
+
 .conteiner {
     max-width: 1540px;
     width: 100%;
@@ -59,6 +68,7 @@ h6 {}
 /* ===== Импорт scss модулей ===== */
 @import "header";
 @import "./components/dropdown";
+@import "./components/search";
 
 /* ===== Медиазапросы ===== */
 @media (max-width: 992px) {}

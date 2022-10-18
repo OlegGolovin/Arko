@@ -1,9 +1,9 @@
 /* ===== Выбор местоположения ===== */
-const wrapper = document.querySelector(".wrapper"),
+const wrapper = document.querySelector(".dropdown-wrapper"),
     selectBtn = wrapper.querySelector(".select-btn"),
     searchInp = wrapper.querySelector("input"),
     options = wrapper.querySelector(".options");
-let countries = ["Москва", "Санкт Петербург", "Нижний Новгород", "Очень длинный текст какойто", "Тула", "Орел", "Воронеж", "Варкута",
+let countries = ["Москва", "Санкт Петербург", "Нижний Новгород", "Тула", "Орел", "Воронеж", "Варкута",
     "Липецк", "Владимир", "Екатеринбург", "Вологда", "Волгоград", "Иваново", "Брянск", "Бийск"];
 function addCountry(selectedCountry) {
     options.innerHTML = "";
@@ -29,6 +29,6 @@ searchInp.addEventListener("keyup", () => {
         let isSelected = data == selectBtn.firstElementChild.innerText ? "selected" : "";
         return `<li onclick="updateName(this)" class="${isSelected}">${data}</li>`;
     }).join("");
-    options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
+    options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Город не найден!</p>`;
 });
 selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));

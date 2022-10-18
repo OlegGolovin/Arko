@@ -1,15 +1,19 @@
 /* ===== Drop-down inputs.scss ===== */
-
-.wrapper {
+/* dropdown вариант1 */
+.dropdown-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 120px;
+    width: 125px;
     position: relative;
+
     // margin: 85px auto 0;
+    img {
+        margin-top: -10px;
+    }
 }
 
-.wrapper.active .select-btn i {
+.dropdown-wrapper.active .select-btn i {
     transform: rotate(-180deg);
 }
 
@@ -29,14 +33,19 @@ li {
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
         white-space: nowrap;
-        ;
+        font-family: $fontname;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: $colortextblack;
     }
 }
 
 .select-btn {
     height: 100%;
     width: 100%;
-    padding: 10px 10px;
+    padding: 7px 7px;
     font-family: $fontname;
     font-style: normal;
     font-weight: 700;
@@ -45,7 +54,6 @@ li {
     color: $colortextblack;
     justify-content: space-between;
 
-    //   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     i {
         font-size: 10px;
         transition: transform 0.3s linear;
@@ -106,7 +114,7 @@ li {
     }
 }
 
-.wrapper.active .content {
+.dropdown-wrapper.active .content {
     display: block;
 }
 
@@ -140,29 +148,7 @@ li.selected {
     background: #f2f2f2;
 }
 
-/* ===== Drop-down input ===== */
-/* .drop-down__wrapper {
-    width: 105px;
-    position: relative;
-
-    padding: 0 0.1rem;
-
-    img {
-        position: absolute;
-        width: 16px;
-        height: 21px;
-        left: 0;
-        // top: 50%;
-        // right: 0.3rem;
-        pointer-events: none;
-    }
-} */
-
-
-
-
-
-
+/* //dropdown вариант1 */
 
 
 

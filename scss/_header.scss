@@ -2,16 +2,19 @@
 .header {
     height: 55px;
     width: 100%;
+
 }
 
 .header-top {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
+    padding-top: 20px;
+
+
 }
 
 .header-top-left {
-    flex: 1 1 auto;
     display: flex;
     align-items: center;
 }
@@ -27,6 +30,8 @@
     align-items: center;
     margin-left: 30px;
 
+
+
     .header-top-left__item {
         margin-right: 38px;
 
@@ -36,8 +41,128 @@
     }
 }
 
-.header-top-middle {
-    flex: 1 1 auto;
+.header-top__line {
+    height: 1px;
+    width: 100%;
+    border: 1px solid #E0E0E0;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-right: 56px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.header-middle {
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+}
+
+.header-middle-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-middle-adress {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.phone-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.phone-block-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+        font-family: $fontname;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: $colortextblack;
+    }
+
+    img {
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+    }
+}
+
+.phone-block-btn {
+    width: 160px;
+    height: 35px;
+    border: 1px solid #E13B3F;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-left: 28px;
+
+    a {
+        padding: 6px 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #E13B3F;
+        white-space: nowrap;
+    }
+
+}
+
+.icons-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-block-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    row-gap: 10px;
+}
+
+.icons-block-elected {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+.elected-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        width: 36px;
+        height: 19px;
+        background: #E13B3F;
+        border-radius: 7px;
+    }
 }
 
 /* ===== Медиазапросы ===== */

@@ -1,0 +1,49 @@
+/* ===== Search.scss ===== */
+.search-string {
+    position: relative;
+    width: 296px;
+
+    .search-string-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px solid #A8D1E7;
+        border-radius: 25px;
+        height: 45px;
+    }
+
+    img {
+        top: 50%;
+        right: 15px;
+        font-size: 20px;
+        pointer-events: none;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+
+    input {
+        width: 87%;
+        outline: none;
+        font-size: 17px;
+        padding: 0 15px 0 25px;
+        margin-left: 3px;
+
+        &::placeholder {
+            font-family: $fontname;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: #626262;
+
+        }
+    }
+}
+
+
+/* ===== Медиазапросы ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
