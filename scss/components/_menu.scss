@@ -1,0 +1,45 @@
+/* ===== Menu.scss ===== */
+
+.main-menu {
+    width: 100%;
+}
+
+.main-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu__item {
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $blacktext;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        background: $blue;
+
+        a {
+            color: $white;
+        }
+    }
+}
+
+/* ===== Медиазапросы ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

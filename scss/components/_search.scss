@@ -10,6 +10,10 @@
         border: 1px solid #A8D1E7;
         border-radius: 25px;
         height: 45px;
+
+        &:hover {
+            border: 2px solid #A8D1E7;
+        }
     }
 
     img {

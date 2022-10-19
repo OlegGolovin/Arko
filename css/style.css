@@ -191,15 +191,14 @@ a {
 }
 .header-top-left__list .header-top-left__item {
   margin-right: 38px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header-top-left__list .header-top-left__item:last-child {
   margin-right: 10px;
 }
-
-.header-top__line {
-  height: 1px;
-  width: 100%;
-  border: 1px solid #E0E0E0;
+.header-top-left__list .header-top-left__item:hover a {
+  color: #384685;
 }
 
 .header-top-right {
@@ -209,12 +208,19 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header-top-right a {
   margin-right: 56px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header-top-right a:last-child {
   margin-right: 0;
+}
+.header-top-right a:hover {
+  color: #384685;
 }
 
 .header-middle {
@@ -226,6 +232,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid #E0E0E0;
 }
 
 .header-middle-wrap {
@@ -253,6 +260,17 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.header-middle-adress a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E13B3F;
+}
+.header-middle-adress a:hover {
+  color: #9e1e20;
 }
 
 .phone-block {
@@ -319,6 +337,9 @@ a {
   color: #E13B3F;
   white-space: nowrap;
 }
+.phone-block-btn:hover {
+  border: 2px solid #E13B3F;
+}
 
 .icons-block {
   display: -webkit-box;
@@ -345,6 +366,15 @@ a {
           align-items: center;
   margin-right: 40px;
   row-gap: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.icons-block-login:hover {
+  cursor: pointer;
+  color: #384685;
+}
+.icons-block-login:hover svg path {
+  fill: #384685;
 }
 
 .icons-block-elected {
@@ -356,6 +386,14 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 10px;
+  margin-right: 28px;
+}
+.icons-block-elected:hover {
+  cursor: pointer;
+  color: #EE3C3F;
+}
+.icons-block-elected:hover svg path {
+  fill: #EE3C3F;
 }
 
 .elected-group {
@@ -374,6 +412,39 @@ a {
   height: 19px;
   background: #E13B3F;
   border-radius: 7px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.icons-block-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.icons-block-cart:hover {
+  cursor: pointer;
+  color: #384685;
+}
+.icons-block-cart:hover svg path {
+  fill: #384685;
+}
+
+.header-bottom {
+  width: 100%;
+  background: #A8D1E7;
 }
 
 /* ===== Медиазапросы ===== */
@@ -566,6 +637,9 @@ li.selected {
   border-radius: 25px;
   height: 45px;
 }
+.search-string .search-string-wrap:hover {
+  border: 2px solid #A8D1E7;
+}
 .search-string img {
   top: 50%;
   right: 15px;
@@ -621,6 +695,48 @@ li.selected {
   font-size: 16px;
   line-height: 21px;
   color: #626262;
+}
+
+/* ===== Медиазапросы ===== */
+/* ===== Menu.scss ===== */
+.main-menu {
+  width: 100%;
+}
+
+.main-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-menu__item {
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.main-menu__item:last-child {
+  margin-right: 0;
+}
+.main-menu__item a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1D1818;
+  text-transform: uppercase;
+}
+.main-menu__item:hover {
+  background: #384685;
+}
+.main-menu__item:hover a {
+  color: white;
 }
 
 /* ===== Медиазапросы ===== */
