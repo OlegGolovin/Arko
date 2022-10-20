@@ -18,6 +18,11 @@
 
     &:last-child {
         margin-right: 0;
+        background: $blue;
+
+        a {
+            color: $white;
+        }
     }
 
     a {
@@ -26,18 +31,17 @@
         line-height: 26px;
         color: $blacktext;
         text-transform: uppercase;
-    }
 
-    &:hover {
-        background: $blue;
-
-        a {
-            color: $white;
+        &:focus,
+        &:active {
+            color: #9D9D9D;
         }
     }
+
+
 }
 
-/* ===== Медиазапросы ===== */
+/* ===== Media ===== */
 @media (max-width: 992px) {}
 
 @media (max-width: 768px) {}

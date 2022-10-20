@@ -39,7 +39,12 @@ body {
 
 h1 {}
 
-h2 {}
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: $black;
+}
 
 h3 {}
 
@@ -70,8 +75,11 @@ a {
 @import "./components/dropdown";
 @import "./components/search";
 @import "./components/menu";
+@import "slide";
+@import "benefits";
+@import "catalog";
 
-/* ===== Медиазапросы ===== */
+/* ===== Media ===== */
 @media (max-width: 992px) {}
 
 @media (max-width: 768px) {}

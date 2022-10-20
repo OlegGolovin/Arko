@@ -1,0 +1,58 @@
+/* ===== Catalog.scss ===== */
+.catalog {
+    width: 100%;
+    margin-top: 62px;
+}
+
+.catalog__title {
+    margin-bottom: 39px;
+}
+
+.catalog-card-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 39px;
+    column-gap: 30px;
+}
+
+.catalog-card {
+    width: 357px;
+    height: 238px;
+    border-radius: 10px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    a {
+        padding: 8px 16px;
+        background: #384685;
+        border-radius: 0px 0px 0px 10px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.065em;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+    }
+}
+
+/* ===== Media ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

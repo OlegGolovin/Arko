@@ -1,0 +1,59 @@
+/* ===== Benefits.scss ===== */
+.benefits {
+    width: 100%;
+    margin-top: 54px;
+}
+
+.benefits__title {
+    margin-bottom: 34px;
+}
+
+.benefits-cardblock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefits-card {
+    width: 357px;
+    height: 94px;
+    background: #F4F4F4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .benefits-card__icon {
+        margin-right: 16px;
+
+        img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+
+    .benefits-card__text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+
+}
+
+/* ===== Media ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
