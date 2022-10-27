@@ -1,20 +1,109 @@
 /* ===== Menu.scss ===== */
-
 .main-menu {
     width: 100%;
 }
 
-.main-menu__list {
+.main-menu>ul {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.main-menu ul li {
+    position: relative;
+}
+
+.main-menu>ul>li {
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+        background: $blue;
+
+        a {
+            color: $white;
+        }
+    }
+}
+
+.main-menu ul li a {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: $blacktext;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+
+
+    &:hover {
+        color: #9D9D9D;
+        transition: all 0.2s linear;
+    }
+}
+
+.main-menu li ul {
+    position: absolute;
+    min-width: 150px;
+    top: 150px;
+}
+
+/* .main-menu li ul {
+    // display: none;
+    top: 65px;
+    left: 25px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    min-width: 217px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+
+    a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #1D1818;
+        text-transform: none;
+        padding: 10px 0px;
+    }
+}
+
+.main-menu li>ul li a {
+    padding: 10px;
+    text-transform: none;
+
+}
+
+.main-menu li>ul li ul {
+    position: absolute;
+    top: 0;
+    right: -150px;
+}
+
+.main-menu>ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.main-menu__item {
+} */
+
+/* .main-menu__item {
     padding: 20px 30px;
     border-radius: 5px;
     margin-right: 10px;
     transition: all 0.3s linear;
+
+
 
     &:last-child {
         margin-right: 0;
@@ -26,20 +115,27 @@
     }
 
     a {
+
+        display: block;
+
         font-weight: 700;
         font-size: 20px;
         line-height: 26px;
         color: $blacktext;
         text-transform: uppercase;
 
-        &:focus,
-        &:active {
+        &:hover {
             color: #9D9D9D;
+            transition: all 0.2s linear;
+
+
         }
     }
 
 
+
 }
+ */
 
 /* ===== Media ===== */
 @media (max-width: 992px) {}
