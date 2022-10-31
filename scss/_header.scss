@@ -1,8 +1,6 @@
 /* ===== Header.scss ===== */
 .header {
-
     width: 100%;
-
 }
 
 .header-top {
@@ -10,8 +8,6 @@
     /* align-items: center; */
     justify-content: space-between;
     padding-top: 20px;
-
-
 }
 
 .header-top-left {
@@ -22,15 +18,12 @@
 .header-top-left__city {
     display: flex;
     align-items: center;
-
 }
 
 .header-top-left__list {
     display: flex;
     align-items: center;
     margin-left: 30px;
-
-
 
     .header-top-left__item {
         margin-right: 38px;
@@ -91,7 +84,6 @@
     align-items: flex-start;
 
     a {
-
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
@@ -242,6 +234,27 @@
 .header-bottom {
     width: 100%;
     background: #A8D1E7;
+
+
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom-look {
+    background: #384685;
+    border-radius: 5px;
+    margin-left: 25px;
+
+    a {
+        color: $white;
+        text-transform: uppercase;
+        padding: 18px 22px;
+
+    }
 }
 
 /* ===== Media ===== */

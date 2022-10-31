@@ -453,6 +453,29 @@ a {
   background: #A8D1E7;
 }
 
+.nav-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-bottom-look {
+  background: #384685;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+.header-bottom-look a {
+  color: white;
+  text-transform: uppercase;
+  padding: 18px 22px;
+}
+
 /* ===== Media ===== */
 /* ===== Drop-down inputs.scss ===== */
 /* dropdown вариант1 */
@@ -753,6 +776,7 @@ li.selected {
   font-size: 20px;
   line-height: 26px;
   color: #1D1818;
+  text-transform: uppercase;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
 }
