@@ -734,16 +734,17 @@ li.selected {
   padding: 20px 15px;
   background: #A8D1E7;
   position: relative;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
 }
 .nav-main__item:hover {
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
 }
 .nav-main__item:hover > ul {
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+  padding-top: 10px;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
   display: block;
 }
 
@@ -765,7 +766,6 @@ li.selected {
   position: absolute;
   top: 65px;
   left: 15px;
-  padding-top: 10px;
   padding-bottom: 20px;
   min-width: 217px;
   background: #FFFFFF;
@@ -779,7 +779,6 @@ li.selected {
   position: absolute;
   top: 0px;
   left: 100%;
-  padding-top: 20px;
   padding-bottom: 20px;
   min-width: 217px;
   background: #FFFFFF;
@@ -791,8 +790,25 @@ li.selected {
 
 .sub-nav__list li {
   position: relative;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.sub-nav__list li i {
+  position: absolute;
+  right: 10px;
+  padding-top: 3px;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sub-nav__list li:hover > i {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .sub-nav__item {

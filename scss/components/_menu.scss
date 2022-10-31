@@ -26,14 +26,14 @@
     padding: 20px 15px;
     background: #A8D1E7;
     position: relative;
-    transition: 0.3s all linear;
+    transition: 0.2s all linear;
 
     &:hover {
-        transition: 0.3s all linear;
+        transition: 0.2s all linear;
 
         >ul {
-            //.sub-nav__list {
-            transition: 0.3s all linear;
+            padding-top: 10px;
+            transition: 0.2s all linear;
             display: block;
         }
     }
@@ -56,7 +56,7 @@
     position: absolute;
     top: 65px;
     left: 15px;
-    padding-top: 10px;
+    //padding-top: 10px;
     padding-bottom: 20px;
     min-width: 217px;
     background: #FFFFFF;
@@ -69,7 +69,7 @@
     position: absolute;
     top: 0px;
     left: 100%;
-    padding-top: 20px;
+    // padding-top: 20px;
     padding-bottom: 20px;
     min-width: 217px;
     background: #FFFFFF;
@@ -80,8 +80,29 @@
 
 .sub-nav__list li {
     position: relative;
-    transition: 0.3s all linear;
+    transition: 0.2s all linear;
+    transition: all 0.3s linear;
 
+    i {
+        position: absolute;
+        right: 10px;
+        padding-top: 3px;
+        transform: translate(-50% -50%);
+        transition: all 0.2s linear;
+    }
+
+
+
+    &:hover {
+
+
+        >i {
+
+            transition: all 0.2s linear;
+            transform: rotate(-90deg);
+        }
+
+    }
 }
 
 .sub-nav__item {
