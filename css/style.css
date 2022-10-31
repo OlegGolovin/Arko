@@ -539,6 +539,8 @@ a {
   border-radius: 7px;
   -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  cursor: pointer;
 }
 .content .search {
   position: relative;
@@ -718,6 +720,15 @@ li.selected {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.nav-main__list li {
+  padding-left: 25px;
+}
+.nav-main__list li:hover {
+  background: #A8D1E7;
+}
+.nav-main__list li:hover > ul {
+  display: block;
+}
 
 .nav-main__item {
   padding: 20px 15px;
@@ -730,7 +741,7 @@ li.selected {
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
 }
-.nav-main__item:hover .sub-nav__list {
+.nav-main__item:hover > ul {
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
   display: block;
@@ -754,7 +765,20 @@ li.selected {
   position: absolute;
   top: 65px;
   left: 15px;
-  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  min-width: 217px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
+}
+
+.sub-nav__list ul {
+  position: absolute;
+  top: 0px;
+  left: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 217px;
@@ -765,8 +789,15 @@ li.selected {
   display: none;
 }
 
+.sub-nav__list li {
+  position: relative;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
 .sub-nav__item {
   padding: 7px 0;
+  position: relative;
 }
 
 .sub-nav__link {
