@@ -28,11 +28,22 @@
 
 .popular-card-block-card {
     width: 357px;
-    height: 618px;
+    height: auto; //618px;
     background: $white;
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 37px 30px;
+
+
+    &:hover {
+        transition: all 0.3s linear;
+
+        .popular-card-block-card__colors {
+            display: flex;
+
+            transition: all 0.3s linear;
+        }
+    }
 }
 
 .popular-card-block-card__img {
@@ -77,9 +88,6 @@
         transform: translate(-50%, -50%);
         color: $white;
         white-space: nowrap;
-
-
-
     }
 
     &:hover {
@@ -99,9 +107,13 @@
 
 .popular-card-block-card__colors {
     margin-top: 30px;
-    display: flex;
+    display: none;
+    opacity: 0;
+    flex-wrap: wrap;
+    row-gap: 5px;
     border-bottom: 1px solid #E2E2E2;
     padding-bottom: 16px;
+    transition: all 0.3s linear;
 
     span {
         display: block;
@@ -171,18 +183,22 @@
     display: block;
     width: 220px;
     height: 53px;
-    background: #384685;
+    background: $white;
+    // background: #384685;
     border-radius: 5px;
-    color: $white;
+    color: $blacktext;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     transition: all 0.2s linear;
+    border: 1px solid #384685;
+    border-radius: 5px;
 
     &:hover {
         transition: all 0.2s linear;
         background: #182560;
+        color: $white;
     }
 }
 
