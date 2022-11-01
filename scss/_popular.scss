@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    position: relative;
 
     img {
         width: 296px;
@@ -48,24 +48,207 @@
         text-align: center;
         object-fit: cover;
         overflow: hidden;
+
     }
 }
 
 .popular-card-block-card__sale {
-    width: 58px;
-    height: 25px;
-    border-bottom-right-radius: 7px;
-    border-top-right-radius: 7px;
-    background: #E13B3F;
-    border: 1px solid #E13B3F;
+    background: #0E9F2E;
+    border: 1px solid #0E9F2E;
+    width: 63px;
+    height: 29px;
+    border-radius: 5px;
+    position: absolute;
+    top: -14px;
+    left: 0;
+}
 
+.popular-card-block-card__sale__wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.2s linear;
 
     span {
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: $white;
+        white-space: nowrap;
+
+
+
+    }
+
+    &:hover {
+        transition: all 0.2s linear;
+        transform: scale(1.2);
     }
 }
 
+.sale {
+    background: #E13B3F;
+    border: 1px solid #E13B3F;
+}
 
+.popular-card-block-card__title {
+    margin-top: 40px;
+}
+
+.popular-card-block-card__colors {
+    margin-top: 30px;
+    display: flex;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 16px;
+
+    span {
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 2px;
+        margin-right: 13px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transition: all 0.2s linear;
+            transform: scale(1.1);
+        }
+    }
+
+    .color1 {
+        background: #2D2D2D;
+    }
+
+    .color2 {
+        background: #4D511D;
+    }
+
+    .color3 {
+        background: #F3E7C6;
+    }
+}
+
+.popular-card-block-card__price {
+    display: flex;
+    margin-top: 12px;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 17px;
+
+    .oldprice {
+        padding-top: 5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-decoration-line: line-through;
+        color: #BDBDBD;
+        margin-right: 12px;
+    }
+
+    .newprice {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        color: #000000;
+    }
+}
+
+.popular-card-block-card-buy {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.popular-card-block-card__btn {
+    display: block;
+    width: 220px;
+    height: 53px;
+    background: #384685;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    transition: all 0.2s linear;
+
+    &:hover {
+        transition: all 0.2s linear;
+        background: #182560;
+    }
+}
+
+.popular-card-block-card__comment {
+    position: relative;
+    transition: all 0.3s linear;
+
+    span {
+        // display: flex;
+        align-items: center;
+        position: absolute;
+        top: -70px;
+        left: -15px;
+        width: 176px;
+        height: 60px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 0 18px;
+        color: #757575;
+        white-space: nowrap;
+        display: none;
+        transition: all 0.3s linear;
+    }
+
+    svg {
+        width: 34px;
+        height: 29px;
+
+
+
+    }
+
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        span {
+            transition: all 0.3s linear;
+            display: flex;
+        }
+    }
+}
+
+.popular-card-block-card-sizes {
+    margin-top: 27px;
+    display: flex;
+
+    .popular-card-block-card-sizes__text {
+        font-size: 18px;
+        line-height: 23px;
+        color: #1D1818;
+    }
+
+    span {
+        padding-top: 2px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1D1818;
+        margin-left: 12px;
+
+    }
+}
 
 /* ===== Media ===== */
 @media (max-width: 992px) {}
