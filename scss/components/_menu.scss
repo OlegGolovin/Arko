@@ -3,6 +3,7 @@
     width: 100%;
 }
 
+/* Персвая строка меню */
 .nav-main__list {
     display: flex;
     align-items: center;
@@ -53,6 +54,9 @@
     }
 }
 
+/* //Персвая строка меню */
+
+/* Первый уровень вложенности меню */
 .sub-nav__list {
     position: absolute;
     top: 65px;
@@ -66,6 +70,7 @@
     display: none;
 }
 
+/* Последующие уровни вложенности меню */
 .sub-nav__list ul {
     position: absolute;
     top: 0px;
@@ -92,17 +97,12 @@
         transition: all 0.2s linear;
     }
 
-
-
     &:hover {
-
-
         >i {
 
             transition: all 0.2s linear;
             transform: rotate(-90deg);
         }
-
     }
 }
 

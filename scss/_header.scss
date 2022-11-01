@@ -248,6 +248,10 @@
     background: #384685;
     border-radius: 5px;
     margin-left: 25px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     a {
         color: $white;

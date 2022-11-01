@@ -52,7 +52,14 @@ h4 {}
 
 h5 {}
 
-h6 {}
+h6 {
+    font-family: $fontname;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
 
 a {
     font-family: $fontname;
