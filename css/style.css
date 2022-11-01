@@ -1079,17 +1079,6 @@ li.selected {
   border-radius: 5px;
   padding: 37px 30px;
 }
-.popular-card-block-card:hover {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.popular-card-block-card:hover .popular-card-block-card__colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
 
 .popular-card-block-card__img {
   display: -webkit-box;
@@ -1159,15 +1148,14 @@ li.selected {
 
 .popular-card-block-card__colors {
   margin-top: 30px;
-  display: none;
-  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 5px;
   border-bottom: 1px solid #E2E2E2;
   padding-bottom: 16px;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
 }
 .popular-card-block-card__colors span {
   display: block;

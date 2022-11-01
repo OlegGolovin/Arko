@@ -35,15 +35,7 @@
     padding: 37px 30px;
 
 
-    &:hover {
-        transition: all 0.3s linear;
 
-        .popular-card-block-card__colors {
-            display: flex;
-
-            transition: all 0.3s linear;
-        }
-    }
 }
 
 .popular-card-block-card__img {
@@ -107,13 +99,11 @@
 
 .popular-card-block-card__colors {
     margin-top: 30px;
-    display: none;
-    opacity: 0;
+    display: flex;
     flex-wrap: wrap;
     row-gap: 5px;
     border-bottom: 1px solid #E2E2E2;
     padding-bottom: 16px;
-    transition: all 0.3s linear;
 
     span {
         display: block;
