@@ -24,9 +24,20 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
+}
+
+.popular-card-block-card-wrap {
+    width: 357px;
+    height: 490px;
+    position: relative;
 }
 
 .popular-card-block-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
     width: 357px;
     height: auto; //618px;
     background: $white;
@@ -35,6 +46,26 @@
     padding: 37px 30px;
 
 
+    &:hover {
+
+
+        .popular-card-block-card__colors {
+            transition: all 0.2s linear;
+            height: auto;
+            margin-top: 30px;
+
+            span {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .popular-card-block-card-sizes {
+            transition: all 0.2s linear;
+            height: auto;
+            margin-top: 27px;
+        }
+    }
 
 }
 
@@ -97,18 +128,20 @@
     margin-top: 40px;
 }
 
+
+
 .popular-card-block-card__colors {
-    margin-top: 30px;
+    overflow: hidden;
+    height: 0px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 5px;
     border-bottom: 1px solid #E2E2E2;
     padding-bottom: 16px;
+    transition: all 0.2s linear;
 
     span {
         display: block;
-        width: 28px;
-        height: 28px;
         border-radius: 2px;
         margin-right: 13px;
         cursor: pointer;
@@ -236,8 +269,11 @@
 }
 
 .popular-card-block-card-sizes {
-    margin-top: 27px;
+
     display: flex;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.2s linear;
 
     .popular-card-block-card-sizes__text {
         font-size: 18px;

@@ -1068,9 +1068,20 @@ li.selected {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
+}
+
+.popular-card-block-card-wrap {
+  width: 357px;
+  height: 490px;
+  position: relative;
 }
 
 .popular-card-block-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
   width: 357px;
   height: auto;
   background: white;
@@ -1078,6 +1089,22 @@ li.selected {
           box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 37px 30px;
+}
+.popular-card-block-card:hover .popular-card-block-card__colors {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  height: auto;
+  margin-top: 30px;
+}
+.popular-card-block-card:hover .popular-card-block-card__colors span {
+  width: 28px;
+  height: 28px;
+}
+.popular-card-block-card:hover .popular-card-block-card-sizes {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  height: auto;
+  margin-top: 27px;
 }
 
 .popular-card-block-card__img {
@@ -1147,7 +1174,8 @@ li.selected {
 }
 
 .popular-card-block-card__colors {
-  margin-top: 30px;
+  overflow: hidden;
+  height: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,11 +1184,11 @@ li.selected {
   row-gap: 5px;
   border-bottom: 1px solid #E2E2E2;
   padding-bottom: 16px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .popular-card-block-card__colors span {
   display: block;
-  width: 28px;
-  height: 28px;
   border-radius: 2px;
   margin-right: 13px;
   cursor: pointer;
@@ -1292,10 +1320,13 @@ li.selected {
 }
 
 .popular-card-block-card-sizes {
-  margin-top: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .popular-card-block-card-sizes .popular-card-block-card-sizes__text {
   font-size: 18px;
