@@ -133,6 +133,7 @@ h2 {
   font-size: 30px;
   line-height: 39px;
   color: black;
+  text-transform: uppercase;
 }
 
 h6 {
@@ -1414,6 +1415,59 @@ li.selected {
 }
 .categories__link:hover a {
   color: white;
+}
+
+/* ===== Media ===== */
+.stok-top {
+  width: 100%;
+  margin-top: 76px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ===== Media ===== */
+/* ===== Ourwork.scss ===== */
+.ourwork {
+  margin-top: 95px;
+}
+
+.ourwork-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* ===== Media ===== */

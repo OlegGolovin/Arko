@@ -44,6 +44,7 @@ h2 {
     font-size: 30px;
     line-height: 39px;
     color: $black;
+    text-transform: uppercase;
 }
 
 h3 {}
@@ -87,6 +88,8 @@ a {
 @import "catalog";
 @import "popular";
 @import "categories";
+@import "stok";
+@import "ourwork";
 
 /* ===== Media ===== */
 @media (max-width: 992px) {}
