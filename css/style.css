@@ -1089,6 +1089,9 @@ li.selected {
   border-radius: 5px;
   padding: 37px 30px;
 }
+.popular-card-block-card:hover {
+  z-index: 100;
+}
 .popular-card-block-card:hover .popular-card-block-card__colors {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
