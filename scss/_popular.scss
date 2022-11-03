@@ -292,6 +292,22 @@
     }
 }
 
+.popular-showmore {
+    margin-top: 37px;
+    width: 100%;
+    height: 75px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $blacktext;
+    cursor: pointer;
+}
+
 /* ===== Media ===== */
 @media (max-width: 992px) {}
 

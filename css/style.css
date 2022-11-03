@@ -1344,5 +1344,77 @@ li.selected {
   margin-left: 12px;
 }
 
+.popular-showmore {
+  margin-top: 37px;
+  width: 100%;
+  height: 75px;
+  background: #F2F2F2;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1D1818;
+  cursor: pointer;
+}
+
+/* ===== Media ===== */
+/* ===== Categories.scss ===== */
+.categories {
+  margin-top: 80px;
+}
+
+.categories-block {
+  margin-top: 40px;
+}
+
+.categories-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.categories__link {
+  border: 1px solid #384685;
+  border-radius: 5px;
+  margin-right: 34px;
+  height: auto;
+  padding: 15px 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.categories__link:last-child {
+  margin-right: 0;
+}
+.categories__link a {
+  padding: 15px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #384685;
+}
+.categories__link:hover {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: #384685;
+}
+.categories__link:hover a {
+  color: white;
+}
+
 /* ===== Media ===== */
 /* ===== Media ===== */
