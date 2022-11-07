@@ -1527,5 +1527,23 @@ li.selected {
           justify-content: space-between;
 }
 
+.ourwork-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 30px;
+  overflow: hidden;
+}
+.ourwork-grid img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.ourwork-grid__item {
+  text-align: center;
+}
+
 /* ===== Media ===== */
 /* ===== Media ===== */
