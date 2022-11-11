@@ -1,0 +1,29 @@
+/* ===== Contacts.scss ===== */
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-contacts {
+    background: no-repeat center url("../img/contacts_bg.jpg");
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.contacts-card {}
+
+
+
+
+
+
+
+
+
+/* ===== Media ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
