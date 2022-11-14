@@ -1,0 +1,41 @@
+/* ===== Footer.scss ===== */
+.footer {
+    width: 100%;
+    height: 500px;
+    margin-top: 71px;
+    background: #384685;
+}
+
+.footer-nav {
+    padding-top: 50px;
+}
+
+.footer-nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav__item>a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer-subnav__list {
+    padding: 10px 0;
+
+    a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+}
+
+/* ===== Media ===== */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
