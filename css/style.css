@@ -500,6 +500,11 @@ a {
 }
 
 /* ===== Media ===== */
+@media (max-width: 1264px) {
+  .header-bottom-look a {
+    font-size: 16px;
+  }
+}
 /* ===== Drop-down inputs.scss ===== */
 /* dropdown вариант1 */
 .dropdown-wrapper {
@@ -767,9 +772,6 @@ li.selected {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.nav-main__list li {
-  padding-left: 25px;
-}
 .nav-main__list li:hover {
   background: #A8D1E7;
 }
@@ -778,7 +780,7 @@ li.selected {
 }
 
 .nav-main__item {
-  padding: 20px 15px;
+  padding: 1.1111111111rem 0.8333333333rem;
   background: #A8D1E7;
   position: relative;
   -webkit-transition: 0.2s all linear;
@@ -798,7 +800,7 @@ li.selected {
 
 .nav-main__item > a {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.1111111111rem;
   line-height: 26px;
   color: #1D1818;
   text-transform: uppercase;
@@ -886,9 +888,9 @@ li.selected {
 
 /* ===== Media ===== */
 @media (max-width: 1264px) {
-  .nav-main__item > a {
-    font-size: 16px;
-  }
+  /* .nav-main__item>a {
+      font-size: 16px;
+  } */
 }
 /* ===== Slide.scss ===== */
 .slide {
@@ -1800,6 +1802,11 @@ li.selected {
 /* ===== Media ===== */
 @media (max-width: 1264px) {
   html {
-    font-size: 88.89%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
   }
 }

@@ -101,11 +101,15 @@ a {
 /* ===== Media ===== */
 @media (max-width: 1264px) {
     html {
-        font-size: 88.89%;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 768px) {}
 

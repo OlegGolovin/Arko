@@ -10,7 +10,7 @@
     justify-content: space-between;
 
     li {
-        padding-left: 25px;
+        // padding-left: 25px;
 
         &:hover {
             background: #A8D1E7;
@@ -24,7 +24,7 @@
 
 
 .nav-main__item {
-    padding: 20px 15px;
+    padding: rem(20) rem(15);
     background: #A8D1E7;
     position: relative;
     transition: 0.2s all linear;
@@ -43,7 +43,8 @@
 
 .nav-main__item>a {
     font-weight: 700;
-    font-size: 20px;
+    //  font-size: 20px;
+    font-size: rem(20);
     line-height: 26px;
     color: #1D1818;
     text-transform: uppercase;
@@ -130,9 +131,9 @@
 
 /* ===== Media ===== */
 @media (max-width: 1264px) {
-    .nav-main__item>a {
+    /* .nav-main__item>a {
         font-size: 16px;
-    }
+    } */
 }
 
 @media (max-width: 992px) {}

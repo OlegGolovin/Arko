@@ -9,3 +9,9 @@ $blue: #384685;
 $bluehover: #182560;
 $colortextblack: #1D1818;
 $red: #EE3C3F;
+
+@function rem($px) {
+    $font: 18;
+    $rem: calc(($px/$font)*1rem);
+    @return($rem);
+}
