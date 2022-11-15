@@ -885,6 +885,11 @@ li.selected {
 }
 
 /* ===== Media ===== */
+@media (max-width: 1264px) {
+  .nav-main__item > a {
+    font-size: 16px;
+  }
+}
 /* ===== Slide.scss ===== */
 .slide {
   width: 100%;
