@@ -4,12 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 125px;
+    width: rem(125);
     position: relative;
 
     // margin: 85px auto 0;
     img {
-        margin-top: -10px;
+        margin-top: rem(-10);
     }
 }
 
@@ -27,7 +27,7 @@
     white-space: nowrap;
 
     span {
-        padding-right: 5px;
+        padding-right: rem(5);
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
@@ -35,8 +35,8 @@
         font-family: $fontname;
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: rem(18);
+        line-height: rem(23);
         color: $colortextblack;
     }
 }
@@ -44,17 +44,17 @@
 .select-btn {
     height: 100%;
     width: 100%;
-    padding: 7px 7px;
+    padding: rem(7) rem(7);
     font-family: $fontname;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: rem(18);
+    line-height: rem(23);
     color: $colortextblack;
     justify-content: space-between;
 
     i {
-        font-size: 10px;
+        font-size: rem(10);
         transition: transform 0.3s linear;
     }
 
@@ -64,13 +64,13 @@
     position: absolute;
     left: 0;
     top: 50px;
-    width: 250px;
+    width: rem(250);
     display: none;
-    padding: 10px;
-    margin-top: 5px;
+    padding: rem(10);
+    margin-top: rem(5);
     background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: rem(7);
+    box-shadow: 0 rem(10) rem(25) rgba(0, 0, 0, 0.1);
     z-index: 100;
     cursor: pointer;
 
@@ -79,25 +79,25 @@
 
         i {
             top: 50%;
-            left: 15px;
+            left: rem(15);
             color: #999;
-            font-size: 20px;
+            font-size: rem(20);
             pointer-events: none;
             transform: translateY(-50%);
             position: absolute;
         }
 
         input {
-            height: 50px;
+            height: rem(50);
             width: 100%;
             outline: none;
-            font-size: 17px;
-            border-radius: 5px;
-            padding: 0 20px 0 43px;
+            font-size: rem(17);
+            border-radius: rem(5);
+            padding: 0 rem(20) 0 rem(43);
             border: 1px solid #B3B3B3;
 
             &:focus {
-                padding-left: 42px;
+                padding-left: rem(42);
                 border: 2px solid #4285f4;
             }
 
@@ -108,10 +108,10 @@
     }
 
     .options {
-        margin-top: 10px;
-        max-height: 250px;
+        margin-top: rem(10);
+        max-height: rem(250);
         overflow-y: auto;
-        padding-right: 7px;
+        padding-right: rem(7);
     }
 }
 
@@ -120,17 +120,17 @@
 }
 
 .options::-webkit-scrollbar {
-    width: 7px;
+    width: rem(7);
 }
 
 .options::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 25px;
+    border-radius: rem(25);
 }
 
 .options::-webkit-scrollbar-thumb {
     background: #ccc;
-    border-radius: 25px;
+    border-radius: rem(25);
 }
 
 .options::-webkit-scrollbar-thumb:hover {
@@ -138,14 +138,14 @@
 }
 
 .options li {
-    height: 50px;
-    padding: 0 10px;
-    font-size: 18px;
+    height: rem(50);
+    padding: 0 rem(10);
+    font-size: rem(18);
 }
 
 .options li:hover,
 li.selected {
-    border-radius: 5px;
+    border-radius: rem(5);
     background: #f2f2f2;
 }
 

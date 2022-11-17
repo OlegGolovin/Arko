@@ -62,13 +62,13 @@
 .sub-nav__list {
     position: absolute;
     top: rem(65);
-    left: 15px;
+    left: rem(15);
     //padding-top: 10px;
     padding-bottom: rem(20);
     min-width: rem(217);
     background: #FFFFFF;
-    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: rem(1) rem(1) rem(10) rem(2) rgba(0, 0, 0, 0.1);
+    border-radius: rem(5);
     display: none;
 }
 
@@ -81,8 +81,8 @@
     padding-bottom: rem(20);
     min-width: rem(217);
     background: #FFFFFF;
-    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: rem(1) rem(1) rem(10) rem(2) rgba(0, 0, 0, 0.1);
+    border-radius: rem(5);
     display: none;
 }
 
