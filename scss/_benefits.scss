@@ -1,17 +1,17 @@
 /* ===== Benefits.scss ===== */
 .benefits {
     width: 100%;
-    margin-top: 54px;
+    margin-top: rem(54);
 }
 
 .benefits__title {
-    margin-bottom: 34px;
+    margin-bottom: rem(34);
 }
 
 .benefits-cardblock {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }

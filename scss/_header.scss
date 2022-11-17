@@ -5,9 +5,8 @@
 
 .header-top {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: rem(20);
 }
 
 .header-top-left {
@@ -23,14 +22,14 @@
 .header-top-left__list {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: rem(30);
 
     .header-top-left__item {
-        margin-right: 38px;
+        margin-right: rem(38);
         transition: all 0.3s linear;
 
         &:last-child {
-            margin-right: 10px;
+            margin-right: rem(10);
         }
 
         &:hover {
@@ -47,7 +46,7 @@
     transition: all 0.3s linear;
 
     a {
-        margin-right: 56px;
+        margin-right: rem(56);
         transition: all 0.3s linear;
 
         &:last-child {
@@ -64,7 +63,7 @@
 
 .header-middle {
     width: 100%;
-    height: 93px;
+    height: rem(93);
     display: flex;
     align-items: center;
     border-top: 1px solid #E0E0E0;
@@ -77,16 +76,24 @@
     justify-content: space-between;
 }
 
+.logo {
+    margin-right: rem(10);
+    width: rem(197);
+    height: rem(40);
+    overflow: hidden;
+    object-fit: cover;
+}
+
 .header-middle-adress {
-    width: 230px;
+    width: rem(230);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     a {
         font-weight: 400;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: rem(18);
+        line-height: rem(23);
         text-decoration-line: underline;
         color: #E13B3F;
 
@@ -106,46 +113,48 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: rem(10);
 
     a {
         font-family: $fontname;
         font-style: normal;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 28px;
+        font-size: rem(22);
+        line-height: rem(28);
         color: $colortextblack;
+        white-space: nowrap;
     }
 
     img {
-        width: 19px;
-        height: 19px;
-        margin-right: 10px;
+        width: rem(19);
+        height: rem(19);
+        margin-right: rem(10);
     }
 }
 
 .phone-block-btn {
-    width: 160px;
-    height: 35px;
+    width: rem(160);
+    height: rem(35);
     border: 1px solid #E13B3F;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 2px;
-    margin-left: 28px;
+    margin-top: rem(2);
+    margin-left: rem(28);
 
     a {
-        padding: 6px 20px;
+        padding: rem(6) rem(20);
         font-weight: 400;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: rem(18);
+        line-height: rem(23);
         color: #E13B3F;
         white-space: nowrap;
     }
 
     &:hover {
-        border: 2px solid #E13B3F;
+        border: rem(2) solid #E13B3F;
     }
 }
 
@@ -159,9 +168,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 40px;
-    row-gap: 10px;
+    margin-right: rem(40);
+    row-gap: rem(10);
     transition: all 0.3s linear;
+    margin-left: rem(10);
 
     &:hover {
         cursor: pointer;
@@ -178,8 +188,8 @@
 .icons-block-elected {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    margin-right: 28px;
+    row-gap: rem(10);
+    margin-right: rem(28);
 
     &:hover {
         cursor: pointer;
@@ -199,14 +209,14 @@
     justify-content: space-between;
 
     span {
-        width: 36px;
-        height: 19px;
+        width: rem(36);
+        height: rem(19);
         background: #E13B3F;
-        border-radius: 7px;
+        border-radius: rem(7);
         color: $white;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: rem(14);
+        line-height: rem(18);
         text-align: center;
 
     }
@@ -216,7 +226,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
+    row-gap: rem(10);
     transition: all 0.3s linear;
 
     &:hover {
@@ -247,27 +257,24 @@
 .header-bottom-look {
     background: #384685;
     border-radius: 5px;
-    margin-left: 25px;
-    height: 45px;
+    margin-left: rem(25);
+    height: rem(45);
     display: flex;
     align-items: center;
     justify-content: center;
 
     a {
+        font-size: rem(20);
         color: $white;
         text-transform: uppercase;
-        padding: 18px 22px;
+        padding: rem(18) rem(22);
 
     }
 }
 
 /* ===== Media ===== */
 @media (max-width: 1264px) {
-    .header-bottom-look {
-        a {
-            font-size: 16px;
-        }
-    }
+    .header-bottom-look {}
 }
 
 @media (max-width: 992px) {}

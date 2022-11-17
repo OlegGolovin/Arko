@@ -1,7 +1,7 @@
 //===== Ourwork.scss ===== */
 .stok-top {
     width: 100%;
-    margin-top: 76px;
+    margin-top: rem(76);
 }
 
 .stok-slider-wrap {
@@ -11,7 +11,7 @@
 
 .swiper {
     width: 100%;
-    height: 510px;
+    height: rem(510);
     cursor: grab;
 
 
@@ -26,7 +26,7 @@
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: rem(18);
     background: #fff;
 
     /* Center slide text vertically */
@@ -53,11 +53,11 @@
 }
 
 .slider-nav {
-    width: 60px;
-    height: 60px;
+    width: rem(60);
+    height: rem(60);
     border-radius: 50%;
     background: $white;
-    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: rem(2) rem(2) rem(8) rem(1) rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -72,20 +72,20 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 14px;
+        padding: rem(14);
     }
 }
 
 .left {
 
-    left: -30px;
+    left: rem(-30);
 
     .slider-prev {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 14px;
+        padding: rem(14);
     }
 }
 

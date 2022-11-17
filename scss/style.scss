@@ -24,6 +24,9 @@ Text Domain: prosite46.ru
 /* ===== Style.scss ===== */
 html {
     font-size: 18px;
+    font-family: $fontname;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -33,10 +36,6 @@ body {
     width: 100%;
     height: 100%;
     margin: 0px auto;
-    font-family: $fontname;
-    font-weight: 400;
-    font-style: normal;
-
     background-color: $white;
 
 }
@@ -45,8 +44,8 @@ h1 {}
 
 h2 {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: rem(30);
+    line-height: rem(39);
     color: $black;
     text-transform: uppercase;
 }
@@ -61,8 +60,8 @@ h6 {
     font-family: $fontname;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: rem(18);
+    line-height: rem(23);
     color: #000000;
 }
 
@@ -70,8 +69,8 @@ a {
     font-family: $fontname;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: rem(18);
+    line-height: rem(23);
     color: $colortextblack;
 }
 
@@ -107,7 +106,7 @@ a {
 
 @media (max-width: 992px) {
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 

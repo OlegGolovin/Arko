@@ -10,6 +10,8 @@ $bluehover: #182560;
 $colortextblack: #1D1818;
 $red: #EE3C3F;
 
+/* Адаптивный размер, $font равен параметру HTML Font size, высчитывает
+сколько ремов будет в размере в пикселях */
 @function rem($px) {
     $font: 18;
     $rem: calc(($px/$font)*1rem);

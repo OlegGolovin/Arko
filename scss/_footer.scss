@@ -1,7 +1,7 @@
 /* ===== Footer.scss ===== */
 .footer {
     width: 100%;
-    margin-top: 71px;
+    margin-top: rem(71);
     background: #384685;
 
 }
@@ -16,24 +16,24 @@
 
 .footer-info {
     flex: 1 1 28%;
-    margin-top: 50px;
-    margin-right: 10px;
+    margin-top: rem(50);
+    margin-right: rem(10);
 }
 
 .footer-info__logo {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: rem(30);
+    line-height: rem(39);
     color: #FFFFFF;
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: rem(12);
 
     span {
         position: absolute;
         left: 0;
         right: 0;
-        width: 38px;
-        height: 38px;
+        width: rem(38);
+        height: rem(38);
         background: #FFD60A;
         border-radius: 50%;
         z-index: 1;
@@ -42,56 +42,71 @@
     .footer-info__logotitle {
         position: relative;
         z-index: 2;
-        padding-left: 8px;
+        padding-left: rem(8);
     }
 }
 
 .footer-info__adress {
     display: flex;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: rem(18);
+    line-height: rem(23);
     color: #FFFFFF;
 
     span {
-        margin-bottom: 15px;
+        margin-bottom: rem(15);
 
         &:first-child {
             font-weight: 400;
-            font-size: 18px;
-            line-height: 23px;
+            font-size: rem(18);
+            line-height: rem(23);
         }
     }
 
     #time {
-        padding-left: 26px;
+        padding-left: rem(26);
     }
 
     #adress {
-        padding-left: 88px;
+        padding-left: rem(88);
     }
 
     #mail {
-        padding-left: 88px;
+        padding-left: rem(88);
     }
 }
 
 .footer-info__inst {
-    margin-top: 50px;
-    margin-bottom: 15px;
+    margin-top: rem(50);
+    margin-bottom: rem(15);
     font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: rem(22);
+    line-height: rem(28);
+}
+
+.footer-info__inst-icon {
+    width: rem(123);
+    height: rem(82);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
 }
 
 .footer-info__copyright {
-    margin-top: 82px;
-    margin-bottom: 25px;
+    font-size: rem(20);
+    line-height: rem(26);
+    color: #DBDBDB;
+    margin-top: rem(82);
+    margin-bottom: rem(25);
 
 }
 
 .footer-nav {
-    padding-top: 50px;
+    padding-top: rem(50);
     flex: 1 1 80%;
 }
 
@@ -102,18 +117,18 @@
 
 .footer-nav__item>a {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: rem(20);
+    line-height: rem(26);
     color: #FFFFFF;
 }
 
 .footer-subnav__list {
-    padding: 10px 0;
+    padding: rem(10) 0;
 
     a {
         font-weight: 400;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: rem(18);
+        line-height: rem(23);
         color: #FFFFFF;
     }
 }

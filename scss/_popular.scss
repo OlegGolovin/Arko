@@ -7,29 +7,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 73px;
+    margin-top: rem(73);
 }
 
 .allproducts {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: rem(18);
+    line-height: rem(23);
     color: $blacktext;
 }
 
 .popular-card-block {
-    margin-top: 40px;
+    margin-top: rem(40);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: rem(30);
 }
 
 .popular-card-block-card-wrap {
-    width: 357px;
-    height: 490px;
+    width: rem(357);
+    height: rem(490);
     position: relative;
 }
 
@@ -37,12 +37,12 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 357px;
+    width: rem(357);
     height: auto;
     background: $white;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 37px 30px;
+    box-shadow: rem(4) rem(4) rem(10) rem(2) rgba(0, 0, 0, 0.1);
+    border-radius: rem(5);
+    padding: rem(37) rem(30);
 
 
     &:hover {
@@ -51,18 +51,18 @@
         .popular-card-block-card__colors {
             transition: all 0.2s linear;
             height: auto;
-            margin-top: 30px;
+            margin-top: rem(30);
 
             span {
-                width: 28px;
-                height: 28px;
+                width: rem(28);
+                height: rem(28);
             }
         }
 
         .popular-card-block-card-sizes {
             transition: all 0.2s linear;
             height: auto;
-            margin-top: 27px;
+            margin-top: rem(27);
         }
     }
 
@@ -76,8 +76,8 @@
     position: relative;
 
     img {
-        width: 296px;
-        height: 214px;
+        width: rem(296);
+        height: rem(214);
         text-align: center;
         object-fit: cover;
         overflow: hidden;
@@ -88,11 +88,11 @@
 .popular-card-block-card__sale {
     background: #0E9F2E;
     border: 1px solid #0E9F2E;
-    width: 63px;
-    height: 29px;
-    border-radius: 5px;
+    width: rem(63);
+    height: rem(29);
+    border-radius: rem(5);
     position: absolute;
-    top: -14px;
+    top: rem(-14);
     left: 0;
 }
 
@@ -124,8 +124,8 @@
 }
 
 .popular-card-block-card__title {
-    margin-top: 25px;
-    height: 40px;
+    margin-top: rem(25);
+    height: rem(40);
 }
 
 
@@ -135,15 +135,15 @@
     height: 0px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 5px;
+    row-gap: rem(5);
     border-bottom: 1px solid #E2E2E2;
-    padding-bottom: 16px;
+    padding-bottom: rem(16);
     transition: all 0.2s linear;
 
     span {
         display: block;
-        border-radius: 2px;
-        margin-right: 13px;
+        border-radius: rem(2);
+        margin-right: rem(13);
         cursor: pointer;
         transition: all 0.2s linear;
 
@@ -172,30 +172,30 @@
 
 .popular-card-block-card__price {
     display: flex;
-    margin-top: 12px;
+    margin-top: rem(12);
     border-bottom: 1px solid #E2E2E2;
-    padding-bottom: 17px;
+    padding-bottom: rem(17);
 
     .oldprice {
-        padding-top: 5px;
+        padding-top: rem(5);
         font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: rem(18);
+        line-height: rem(23);
         text-decoration-line: line-through;
         color: #BDBDBD;
-        margin-right: 12px;
+        margin-right: rem(12);
     }
 
     .newprice {
         font-weight: 700;
-        font-size: 25px;
-        line-height: 32px;
+        font-size: rem(25);
+        line-height: rem(32);
         color: #000000;
     }
 }
 
 .popular-card-block-card-buy {
-    margin-top: 20px;
+    margin-top: rem(20);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,19 +204,19 @@
 
 .popular-card-block-card__btn {
     display: block;
-    width: 220px;
-    height: 53px;
+    width: rem(220);
+    height: rem(53);
     background: $white;
     // background: #384685;
-    border-radius: 5px;
+    border-radius: rem(5);
     color: $blacktext;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: rem(20);
+    line-height: rem(26);
     transition: all 0.2s linear;
     border: 1px solid #384685;
-    border-radius: 5px;
+    border-radius: rem(5);
 
     &:hover {
         transition: all 0.2s linear;
@@ -233,16 +233,16 @@
         // display: flex;
         align-items: center;
         position: absolute;
-        top: -70px;
-        left: -15px;
-        width: 176px;
-        height: 60px;
+        top: rem(-70);
+        left: rem(-15);
+        width: rem(176);
+        height: rem(60);
         background: #FFFFFF;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 2px;
-        font-size: 14px;
-        line-height: 18px;
-        padding: 0 18px;
+        box-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.1);
+        border-radius: rem(2);
+        font-size: rem(14);
+        line-height: rem(18);
+        padding: 0 rem(18);
         color: #757575;
         white-space: nowrap;
         display: none;
@@ -250,8 +250,8 @@
     }
 
     svg {
-        width: 34px;
-        height: 29px;
+        width: rem(34);
+        height: rem(29);
 
 
 
@@ -276,34 +276,34 @@
     transition: all 0.2s linear;
 
     .popular-card-block-card-sizes__text {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: rem(18);
+        line-height: rem(23);
         color: #1D1818;
     }
 
     span {
-        padding-top: 2px;
+        padding-top: rem(2);
         font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: rem(16);
+        line-height: rem(21);
         color: #1D1818;
-        margin-left: 12px;
+        margin-left: rem(12);
 
     }
 }
 
 .popular-showmore {
-    margin-top: 37px;
+    margin-top: rem(37);
     width: 100%;
-    height: 75px;
+    height: rem(75);
     background: #F2F2F2;
-    border-radius: 5px;
+    border-radius: rem(5);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: rem(18);
+    line-height: rem(23);
     color: $blacktext;
     cursor: pointer;
 }

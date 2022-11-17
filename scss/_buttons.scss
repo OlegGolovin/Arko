@@ -5,9 +5,9 @@
     justify-content: center;
     background-color: $blue;
     color: $white;
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
+    width: rem(150);
+    height: rem(40);
+    border-radius: rem(15);
 }
 
 /* ===== Media ===== */
