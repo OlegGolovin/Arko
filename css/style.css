@@ -1180,6 +1180,7 @@ li.selected {
           transform: translate(-50%, -50%);
   color: white;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 .popular-card-block-card__sale__wrap:hover {
   -webkit-transition: all 0.2s linear;
