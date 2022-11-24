@@ -87,13 +87,17 @@ class Products {
         let htmlCatalog = "";
 
         CATALOG.forEach((element) => {
-
+            let saletext = `<div class="popular-card-block-card__sale sale">
+            <div class="popular-card-block-card__sale__wrap">
+                <span>${element.sale}</span>
+            </div>
+            </div>`;
             htmlCatalog += ` 
     <div class="popular-card-block-card-wrap">
             <form class="popular-card-block-card">
                 <div class="popular-card-block-card__img">
-                    <img src="${element.img}">
-
+                    <img src="${element.img}">` +
+                $saletext + `
                     
                 </div>
                 <div class="popular-card-block-card__title">
